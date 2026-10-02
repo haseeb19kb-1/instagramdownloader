@@ -1,0 +1,32 @@
+{
+  "name": "instagram-video-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack Instagram Video Downloader with React, Vite, Express, TypeScript, and high-security architecture",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev:server\" \"npm run dev:client\"",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client",
+    "test:server": "npm --prefix server run test",
+    "test": "npm run test:server",
+    "start": "npm --prefix server run start"
+  },
+  "keywords": [
+    "instagram",
+    "video-downloader",
+    "react",
+    "vite",
+    "express",
+    "typescript",
+    "security"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
